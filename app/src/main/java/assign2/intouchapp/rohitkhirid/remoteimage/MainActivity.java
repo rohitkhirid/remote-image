@@ -92,7 +92,7 @@ public class MainActivity extends Activity
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setOngoing(true);
                 mNotifyManager.notify(1, mBuilder.build());
-                URL url = new URL("http://www.planwallpaper.com/static/images/wallpapers-hd-8000-8331-hd-wallpapers.jpg");
+                URL url = new URL("http://image.fg-a.com/backgrounds/black-planet-surface-1920.jpg");
                 URLConnection connection = url.openConnection();
                 connection.connect();
                 int lenghtOfFile = connection.getContentLength();
@@ -120,8 +120,8 @@ public class MainActivity extends Activity
             {
                 Log.e(TAG, e.getMessage());
             }
-            Log.d(TAG, "Path : " + Environment.getExternalStorageDirectory() + "/sample.png");
-            return Environment.getExternalStorageDirectory() + "/sample.png";
+            Log.d(TAG, "Path : " + Environment.getExternalStorageDirectory() + "/sample.jpg");
+            return Environment.getExternalStorageDirectory() + "/sample.jpg";
         }
 
         protected void onPostExecute(String result)
